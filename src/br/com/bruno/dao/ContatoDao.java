@@ -1,4 +1,4 @@
-package br.com.bruno.connectionFactory;
+package br.com.bruno.dao;
 
 import java.sql.Connection;
 import java.sql.Date;
@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+import br.com.bruno.connectionFactory.ConnectionFactory;
 import br.com.bruno.modelo.Contato;
 
 public class ContatoDao {

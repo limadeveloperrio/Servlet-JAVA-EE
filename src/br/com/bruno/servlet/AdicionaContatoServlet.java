@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.com.bruno.connectionFactory.ContatoDao;
+import br.com.bruno.dao.ContatoDao;
 import br.com.bruno.modelo.Contato;
 
 /**
@@ -52,9 +52,9 @@ public class AdicionaContatoServlet extends HttpServlet {
 		dao.adiciona(contato);
 //imprime o nome do contato que foi adicionado
 		out.println("<html>");
-		out.println("<body>");
-		out.println("Contato " + contato.getNome() + " adicionado com sucesso");
-		out.println("</body>");
+		out.println("<body><br>");
+		out.println("<center>Contato <strong> " + contato.getNome() + "</strong> adicionado com sucesso");
+		out.println("</center></body>");
 		out.println("</html>");
 	}
 
